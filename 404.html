@@ -1,28 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page Not Found | Purpose Built by Coastal</title>
+  <meta name="robots" content="noindex">
   <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/tokens.css"><link rel="stylesheet" href="/components.css">
-  <style>
-    .error-page { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: var(--space-6); }
-    .error-code { font-size: 8rem; font-weight: var(--font-bold); color: var(--gold); line-height: 1; margin-bottom: var(--space-4); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/tokens.css">
 </head>
 <body>
-<div class="error-page">
-  <div>
-    <div class="error-code">404</div>
-    <h1>Page not found.</h1>
-    <p class="body-lg text-muted" style="margin-top:var(--space-4);max-width:28rem;margin-left:auto;margin-right:auto">The page you're looking for doesn't exist or has been moved. Let's get you back on track.</p>
-    <div class="cta-group" style="margin-top:var(--space-8)">
-      <a href="/" class="btn btn-primary btn-lg">Return Home</a>
-      <a href="/investor-overview" class="btn btn-secondary btn-lg">Investor Overview</a>
+
+<!-- Nav -->
+<nav class="nav scrolled" id="nav">
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo" style="font-variant:small-caps">Purpose Built <span style="font-variant:normal">by Coastal</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="/about/">About</a>
+      <a href="/the-approach/">The Approach</a>
+      <a href="/why-fort-myers-beach/">Why Fort Myers Beach</a>
+      <a href="/investor-overview/">Investor Overview</a>
+      <a href="/contact/" class="btn btn-primary">Contact</a>
     </div>
   </div>
-</div>
+</nav>
+
+<!-- 404 -->
+<section class="hero" style="background:linear-gradient(115deg,var(--black) 0%,var(--navy) 48%,var(--navy-light) 100%);min-height:100vh;text-align:center">
+  <div class="container hero-content" style="max-width:36rem;margin:0 auto">
+    <div class="hero-rule" style="margin:0 auto var(--space-6)"></div>
+    <p class="eyebrow" style="margin-bottom:var(--space-4)">Error 404</p>
+    <h1 style="margin-bottom:var(--space-6)">This page has drifted out to sea.</h1>
+    <p class="body-lg" style="margin-bottom:var(--space-8)">The page you're looking for doesn't exist or has moved. Let's get you back to solid ground.</p>
+    <div class="hero-ctas" style="justify-content:center">
+      <a href="/" class="btn btn-gold btn-lg">Return Home</a>
+      <a href="/investor-overview/" class="btn btn-outline btn-lg">Investor Overview</a>
+    </div>
+    <p class="body-sm" style="margin-top:var(--space-12);color:rgba(255,255,255,0.6)">
+      <a href="/about/" style="color:var(--gold)">About</a> ·
+      <a href="/the-approach/" style="color:var(--gold)">The Approach</a> ·
+      <a href="/why-fort-myers-beach/" style="color:var(--gold)">Why Fort Myers Beach</a> ·
+      <a href="/contact/" style="color:var(--gold)">Contact</a>
+    </p>
+  </div>
+</section>
+
+<script>
+(function(){
+  var toggle=document.getElementById('navToggle'),links=document.getElementById('navLinks');
+  toggle.addEventListener('click',function(){
+    var open=this.classList.toggle('active');
+    links.classList.toggle('active');
+    this.setAttribute('aria-expanded',open);
+  });
+})();
+</script>
 </body>
 </html>

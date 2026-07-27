@@ -1,86 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Purpose Built by Coastal | Investor Inquiry</title>
   <meta name="description" content="Ready to explore vacation rental investment in Fort Myers Beach? Connect with the Purpose Built by Coastal team. Response within 24 hours.">
   <link rel="canonical" href="https://purposebuiltbycoastal.com/contact/">
   <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/tokens.css"><link rel="stylesheet" href="/components.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ContactPage","name":"Contact Purpose Built by Coastal","url":"https://purposebuiltbycoastal.com/contact/"}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/tokens.css">
+  <meta property="og:title" content="Contact Purpose Built by Coastal | Investor Inquiry">
+  <meta property="og:description" content="Ready to explore vacation rental investment in Fort Myers Beach? Response within 24 hours.">
+  <meta property="og:image" content="https://purposebuiltbycoastal.com/assets/og/home-og.png">
+  <meta property="og:url" content="https://purposebuiltbycoastal.com/contact/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Purpose Built by Coastal",
+    "url": "https://purposebuiltbycoastal.com/contact/",
+    "about": {
+      "@type": "LocalBusiness",
+      "name": "Purpose Built by Coastal",
+      "email": "invest@purposebuiltbycoastal.com",
+      "url": "https://purposebuiltbycoastal.com",
+      "image": "https://purposebuiltbycoastal.com/assets/icons/favicon.svg",
+      "address": { "@type": "PostalAddress", "addressLocality": "Fort Myers Beach", "addressRegion": "FL", "addressCountry": "US" },
+      "areaServed": "Fort Myers Beach, Florida"
+    }
+  }
+  </script>
 </head>
 <body>
 
-<nav class="nav" id="nav"><div class="container nav-inner">
-  <a href="/" class="nav-logo"><img src="/assets/icons/favicon.svg" alt="" width="32" height="32"><span>Purpose Built <span class="text-accent">by Coastal</span></span></a>
-  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-  <div class="nav-links" id="navLinks">
-    <a href="/about">About</a><a href="/what-is-purpose-built">What Is Purpose Built</a><a href="/three-pillars">Three Pillars</a><a href="/why-fort-myers-beach">Why Fort Myers Beach</a><a href="/investor-overview">Investor Overview</a><a href="/contact" class="btn btn-primary">Contact</a>
+<!-- Nav -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo" style="font-variant:small-caps">Purpose Built <span style="font-variant:normal">by Coastal</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="/about/">About</a>
+      <a href="/the-approach/">The Approach</a>
+      <a href="/why-fort-myers-beach/">Why Fort Myers Beach</a>
+      <a href="/investor-overview/">Investor Overview</a>
+      <a href="/contact/" class="btn btn-primary">Contact</a>
+    </div>
   </div>
-</div></nav>
+</nav>
 
-<section class="hero" style="min-height:60vh">
-  <picture><source srcset="/assets/hero/contact-sunset.webp" type="image/webp"><img src="/assets/hero/contact-sunset.png" alt="Fort Myers Beach sunset — pristine white sand, gentle Gulf waves, silhouetted palm trees, pastel sky" class="hero-bg" width="1600" height="900" loading="eager"></picture>
-  <div class="hero-overlay"></div>
+<!-- Hero -->
+<section class="hero">
+  <picture>
+    <source srcset="/assets/hero/beach-sunset-v2.webp" type="image/webp">
+    <img src="/assets/hero/beach-sunset-v2.png" alt="Pristine white sand beach at sunset — gentle waves, pastel sky, silhouetted palms on dune line" class="hero-bg" width="1600" height="900" loading="eager">
+  </picture>
+  <div class="hero-scrim"></div>
   <div class="container hero-content">
+    <div class="hero-rule"></div>
+    <p class="eyebrow" style="margin-bottom:var(--space-5)">Contact</p>
     <h1>Start the conversation.</h1>
     <p class="body-lg">Tell us about your investment goals and we'll be in touch within 24 hours — with answers, not a pitch deck.</p>
   </div>
 </section>
 
-<section class="section bg-white"><div class="container reveal">
-  <form class="form" action="https://formspree.io/f/your-form-id" method="POST">
-    <div class="form-group">
-      <label class="form-label" for="name">Full Name *</label>
-      <input class="form-input" type="text" id="name" name="name" placeholder="Your name" required>
-    </div>
-    <div class="form-group">
-      <label class="form-label" for="email">Email Address *</label>
-      <input class="form-input" type="email" id="email" name="email" placeholder="you@email.com" required>
-    </div>
-    <div class="form-group">
-      <label class="form-label" for="phone">Phone Number <span style="font-weight:400;color:var(--slate)">(optional)</span></label>
-      <input class="form-input" type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
-    </div>
-    <div class="form-group">
-      <label class="form-label" for="interest">I'm interested in... *</label>
-      <select class="form-select" id="interest" name="interest" required>
-        <option value="">Select an option</option>
-        <option>Learning more about Purpose Built properties</option>
-        <option>Discussing a specific property or development</option>
-        <option>Understanding the Fort Myers Beach market</option>
-        <option>Exploring partnership opportunities</option>
-        <option>Other</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label class="form-label" for="timeline">My timeline is... <span style="font-weight:400;color:var(--slate)">(optional)</span></label>
-      <select class="form-select" id="timeline" name="timeline">
-        <option value="">Select an option</option>
-        <option>Ready to invest now</option>
-        <option>Next 3-6 months</option>
-        <option>6-12 months</option>
-        <option>Exploring for future — 12+ months</option>
-        <option>Just researching for now</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label class="form-label" for="message">Anything else we should know? <span style="font-weight:400;color:var(--slate)">(optional)</span></label>
-      <textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your investment goals, what you're looking for, or any questions you have..."></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary btn-lg" style="width:100%">Send Inquiry</button>
-  </form>
-  <p style="text-align:center;margin-top:var(--space-8);color:var(--slate)">Prefer to reach out directly? Email us at <a href="mailto:invest@purposebuiltbycoastal.com" style="color:var(--gold)">invest@purposebuiltbycoastal.com</a>. We respond to every inquiry — typically within one business day.</p>
-</div></section>
+<!-- Form -->
+<section class="section bg-white">
+  <div class="container form-grid reveal">
+    <!-- Form column -->
+    <div>
+      <form class="form" name="investor-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="inquiryForm">
+        <input type="hidden" name="form-name" value="investor-inquiry">
+        <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
 
-<footer class="footer"><div class="container footer-grid">
-  <div class="footer-brand"><span class="footer-logo">Purpose Built <span class="text-accent">by Coastal</span></span><p class="body-sm text-muted">Purpose-built vacation rental investment in Fort Myers Beach, Florida.</p><a href="mailto:invest@purposebuiltbycoastal.com" class="body-sm text-accent">invest@purposebuiltbycoastal.com</a></div>
-  <div class="footer-col"><h5 class="text-light">Explore</h5><a href="/">Home</a><a href="/about">About</a><a href="/what-is-purpose-built">What Is Purpose Built</a><a href="/three-pillars">Three Pillars</a></div>
-  <div class="footer-col"><h5 class="text-light">Invest</h5><a href="/why-fort-myers-beach">Why Fort Myers Beach</a><a href="/investor-overview">Investor Overview</a><a href="/contact">Contact</a></div>
-  <div class="footer-col"><h5 class="text-light">Contact</h5><p class="body-sm text-muted">Fort Myers Beach, Florida</p><a href="mailto:invest@purposebuiltbycoastal.com" class="body-sm">invest@purposebuiltbycoastal.com</a></div>
-</div><div class="container footer-bottom"><p class="body-sm text-muted">© 2026 Purpose Built by Coastal · Fort Myers Beach, Florida</p></div></footer>
-<script>document.getElementById('navToggle').addEventListener('click',function(){this.classList.toggle('active');document.getElementById('navLinks').classList.toggle('active')});document.querySelectorAll('.reveal').forEach(el=>new IntersectionObserver((e)=>{e.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:0.15}).observe(el));window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>50)});</script>
+        <div class="form-group">
+          <label class="form-label" for="name">Full Name</label>
+          <input class="form-input" type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email Address</label>
+          <input class="form-input" type="email" id="email" name="email" placeholder="you@email.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="phone">Phone Number <span style="text-transform:none;letter-spacing:0;font-weight:400">— optional, if you prefer a call</span></label>
+          <input class="form-input" type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="interest">I'm interested in...</label>
+          <select class="form-select" id="interest" name="interest" required>
+            <option value="" disabled selected>Select an option</option>
+            <option>Learning more about Purpose Built properties</option>
+            <option>Discussing a specific property or development</option>
+            <option>Understanding the Fort Myers Beach market</option>
+            <option>Exploring partnership opportunities</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="timeline">My timeline is...</label>
+          <select class="form-select" id="timeline" name="timeline">
+            <option value="" disabled selected>Select a timeline</option>
+            <option>Ready to invest now</option>
+            <option>Next 3–6 months</option>
+            <option>6–12 months</option>
+            <option>Exploring for future — 12+ months</option>
+            <option>Just researching for now</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Anything else we should know?</label>
+          <textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your investment goals, what you're looking for, or any questions you have..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold btn-lg" id="submitBtn">Send Inquiry</button>
+        <p class="body-sm" id="formStatus" role="status" style="margin-top:var(--space-4)"></p>
+      </form>
+    </div>
+
+    <!-- Reassurance column -->
+    <div>
+      <div class="card card-cream" style="position:sticky;top:calc(var(--nav-height) + var(--space-6))">
+        <p class="eyebrow" style="margin-bottom:var(--space-4)">What to expect</p>
+        <p class="form-reassurance" style="margin-bottom:var(--space-6)">We read and respond to every inquiry — typically within <strong>one business day</strong>. Your first reply comes from a person, not an autoresponder, and there's no obligation. Just a conversation to see whether a Purpose Built property fits your goals.</p>
+        <div class="gold-rule" style="margin-bottom:var(--space-6)"></div>
+        <p class="eyebrow" style="margin-bottom:var(--space-3)">Prefer to reach out directly?</p>
+        <p class="body-sm text-slate" style="margin-bottom:var(--space-3)">Email us anytime and we'll follow up within 24 hours.</p>
+        <a href="mailto:invest@purposebuiltbycoastal.com" class="text-gold body-base" style="font-weight:500">invest@purposebuiltbycoastal.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Inter-page next nav -->
+<section class="section-sm bg-cream">
+  <div class="container reveal" style="display:flex;justify-content:space-between;align-items:center;gap:var(--space-6);flex-wrap:wrap">
+    <div>
+      <p class="eyebrow" style="margin-bottom:var(--space-2)">While you're deciding</p>
+      <span class="h3" style="color:var(--navy)">Revisit the investment details</span>
+    </div>
+    <div class="hero-ctas">
+      <a href="/investor-overview/" class="btn btn-primary">Investor Overview</a>
+      <a href="/why-fort-myers-beach/" class="btn" style="background:transparent;color:var(--navy);border:1px solid rgba(10,22,37,0.2)">Why Fort Myers Beach</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-rule"></div>
+    <div class="footer-grid">
+      <div>
+        <span class="footer-wordmark" style="font-variant:small-caps">Purpose Built</span>
+        <p class="body-sm text-slate" style="margin-bottom:var(--space-4)">Purpose-built vacation rental investment in Fort Myers Beach, Florida.</p>
+        <a href="mailto:invest@purposebuiltbycoastal.com" class="text-gold body-sm">invest@purposebuiltbycoastal.com</a>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <a href="/about/">About</a>
+        <a href="/the-approach/">The Approach</a>
+        <a href="/the-approach/#pillars">Three Pillars</a>
+      </div>
+      <div class="footer-col">
+        <h5>Invest</h5>
+        <a href="/why-fort-myers-beach/">Why Fort Myers Beach</a>
+        <a href="/investor-overview/">Investor Overview</a>
+        <a href="/contact/">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="mailto:invest@purposebuiltbycoastal.com">invest@purposebuiltbycoastal.com</a>
+        <span class="body-sm text-slate">Fort Myers Beach, FL</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="body-sm text-slate">© 2026 Purpose Built by Coastal · Fort Myers Beach, Florida</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var toggle=document.getElementById('navToggle'),links=document.getElementById('navLinks'),nav=document.getElementById('nav');
+  toggle.addEventListener('click',function(){
+    var open=this.classList.toggle('active');
+    links.classList.toggle('active');
+    this.setAttribute('aria-expanded',open);
+  });
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});},{threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  addEventListener('scroll',function(){nav.classList.toggle('scrolled',scrollY>50);},{passive:true});
+
+  var form=document.getElementById('inquiryForm'),btn=document.getElementById('submitBtn'),status=document.getElementById('formStatus');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    btn.disabled=true;btn.textContent='Sending...';
+    var data=new FormData(form);
+    fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(data).toString()})
+      .then(function(){
+        form.reset();
+        status.style.color='var(--navy)';
+        status.textContent='Thank you. We’ll be in touch within 24 hours.';
+      })
+      .catch(function(){
+        status.style.color='#b34a3a';
+        status.innerHTML='Something went wrong. Please try again or email us directly at <a href="mailto:invest@purposebuiltbycoastal.com" style="color:var(--gold)">invest@purposebuiltbycoastal.com</a>.';
+      })
+      .finally(function(){ btn.disabled=false;btn.textContent='Send Inquiry'; });
+  });
+})();
+</script>
 </body>
 </html>

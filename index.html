@@ -9,22 +9,33 @@
   <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/tokens.css">
-  <link rel="stylesheet" href="/components.css">
   <meta property="og:title" content="Purpose Built by Coastal | Vacation Rental Investment Homes">
   <meta property="og:description" content="Performance-engineered vacation rental investment homes in Fort Myers Beach, Florida.">
   <meta property="og:image" content="https://purposebuiltbycoastal.com/assets/og/home-og.png">
   <meta property="og:url" content="https://purposebuiltbycoastal.com/">
   <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Purpose Built by Coastal",
-    "url": "https://purposebuiltbycoastal.com",
-    "email": "invest@purposebuiltbycoastal.com",
-    "address": { "@type": "PostalAddress", "addressLocality": "Fort Myers Beach", "addressRegion": "FL" }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Purpose Built by Coastal",
+        "url": "https://purposebuiltbycoastal.com",
+        "email": "invest@purposebuiltbycoastal.com",
+        "logo": "https://purposebuiltbycoastal.com/assets/icons/favicon.svg",
+        "description": "Developer of performance-engineered vacation rental investment homes in Fort Myers Beach, Florida.",
+        "address": { "@type": "PostalAddress", "addressLocality": "Fort Myers Beach", "addressRegion": "FL", "addressCountry": "US" }
+      },
+      {
+        "@type": "WebSite",
+        "name": "Purpose Built by Coastal",
+        "url": "https://purposebuiltbycoastal.com"
+      }
+    ]
   }
   </script>
 </head>
@@ -33,20 +44,16 @@
 <!-- Nav -->
 <nav class="nav" id="nav">
   <div class="container nav-inner">
-    <a href="/" class="nav-logo">
-      <img src="/assets/icons/favicon.svg" alt="" width="32" height="32">
-      <span>Purpose Built <span class="text-accent">by Coastal</span></span>
-    </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <a href="/" class="nav-logo" style="font-variant:small-caps">Purpose Built <span style="font-variant:normal">by Coastal</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <div class="nav-links" id="navLinks">
-      <a href="/about">About</a>
-      <a href="/what-is-purpose-built">What Is Purpose Built</a>
-      <a href="/three-pillars">Three Pillars</a>
-      <a href="/why-fort-myers-beach">Why Fort Myers Beach</a>
-      <a href="/investor-overview">Investor Overview</a>
-      <a href="/contact" class="btn btn-primary">Contact</a>
+      <a href="/about/">About</a>
+      <a href="/the-approach/">The Approach</a>
+      <a href="/why-fort-myers-beach/">Why Fort Myers Beach</a>
+      <a href="/investor-overview/">Investor Overview</a>
+      <a href="/contact/" class="btn btn-primary">Contact</a>
     </div>
   </div>
 </nav>
@@ -54,150 +61,190 @@
 <!-- Hero -->
 <section class="hero">
   <picture>
-    <source srcset="/assets/hero/home-exterior.webp" type="image/webp">
-    <img src="/assets/hero/home-exterior.png" alt="New-construction vacation rental home in Fort Myers Beach, Florida — elevated coastal design with Gulf views" class="hero-bg" width="1600" height="900" loading="eager">
+    <source srcset="/assets/hero/home-hero-v2.webp" type="image/webp">
+    <img src="/assets/hero/home-hero-v2.png" alt="Luxury modern coastal home at dusk — clean white exterior with navy trim, professional landscaping, warm interior glow" class="hero-bg" width="1600" height="900" loading="eager">
   </picture>
-  <div class="hero-overlay"></div>
+  <div class="hero-scrim"></div>
   <div class="container hero-content">
-    <h1 class="animate-fade-in-up">Investment Homes Built for Performance</h1>
-    <p class="body-lg animate-fade-in-up" style="animation-delay: 0.2s">Purpose-built vacation rental properties in Fort Myers Beach, Florida — engineered from the ground up around guest experience, operational efficiency, and return on investment.</p>
-    <div class="hero-ctas animate-fade-in-up" style="animation-delay: 0.4s">
-      <a href="/investor-overview" class="btn btn-primary btn-lg">View the Opportunity</a>
-      <a href="/contact" class="btn btn-secondary btn-lg">Request Information</a>
+    <div class="hero-rule"></div>
+    <p class="eyebrow" style="margin-bottom:var(--space-5)">Fort Myers Beach, Florida</p>
+    <h1>Vacation Rental Investment Homes Built for Performance</h1>
+    <p class="body-lg">Purpose-built vacation rental properties in Fort Myers Beach, Florida — engineered from the ground up around guest experience, operational efficiency, and return on investment.</p>
+    <div class="hero-ctas">
+      <a href="/investor-overview/" class="btn btn-gold btn-lg">View the Opportunity</a>
+      <a href="/contact/" class="btn btn-outline btn-lg">Request Information</a>
     </div>
   </div>
 </section>
 
 <!-- Concept -->
 <section class="section bg-white">
-  <div class="container reveal" style="max-width: 56rem">
-    <p class="caption text-accent">The Concept</p>
-    <h2>Not a conversion. Not a rehab. Purpose built.</h2>
-    <div class="body-lg space-y-4" style="margin-top: var(--space-6)">
-      <p>Most vacation rental properties started as something else — a family home, a beach cottage, a condo unit. They were designed for living, not for rental performance. The layout fights the operation. The finishes can't handle turnover. The guest experience was an afterthought.</p>
-      <p>Purpose Built by Coastal takes a different approach. Every property is designed from the ground up for short-term rental performance. Every square foot serves the guest. Every material choice accounts for operations. Every design decision connects to return on investment.</p>
-      <p>The result: properties that earn better reviews, cost less to operate, and deliver stronger returns — because they were built that way from day one.</p>
+  <div class="container grid-2 reveal">
+    <div>
+      <p class="eyebrow" style="margin-bottom:var(--space-4)">The Concept</p>
+      <h2 style="margin-bottom:var(--space-6)">Not a conversion. Not a rehab. Purpose built.</h2>
+      <p class="pull-quote" style="margin-bottom:var(--space-8)">Most developers build homes. We build income-producing assets.</p>
+      <div class="body-base text-slate" style="display:flex;flex-direction:column;gap:var(--space-4)">
+        <p>Most vacation rental properties started as something else — a family home, a beach cottage, a condo unit. They were designed for living, not for rental performance. The layout fights the operation. The finishes can't handle turnover. The guest experience was an afterthought.</p>
+        <p>Purpose Built by Coastal takes a different approach. Every property is designed from the ground up for short-term rental performance — every square foot serves the guest, every material choice accounts for operations, and every design decision connects to return on investment.</p>
+      </div>
+      <a href="/the-approach/" class="btn btn-primary" style="margin-top:var(--space-8)">Explore our design approach</a>
     </div>
-    <a href="/what-is-purpose-built" class="btn btn-secondary" style="margin-top: var(--space-8)">Learn about our design approach →</a>
+    <div>
+      <picture>
+        <source srcset="/assets/hero/home-exterior.webp" type="image/webp">
+        <img src="/assets/hero/home-exterior.png" alt="New-construction vacation rental home in Fort Myers Beach, Florida — elevated coastal design with Gulf views" width="1024" height="576" loading="lazy">
+      </picture>
+    </div>
   </div>
 </section>
 
-<!-- Framework -->
-<section class="section bg-sand">
+<!-- Three Pillars -->
+<section class="section bg-cream">
   <div class="container reveal">
-    <p class="caption text-accent">The Framework</p>
-    <h2>Three pillars. One outcome.</h2>
-    <div class="grid-3" style="margin-top: var(--space-12)">
-      <div class="feature-card">
-        <div class="feature-icon gold-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        </div>
+    <div style="max-width:var(--measure)">
+      <p class="eyebrow" style="margin-bottom:var(--space-4)">The Framework</p>
+      <h2 style="margin-bottom:var(--space-4)">Three pillars. One outcome.</h2>
+      <p class="body-lg text-slate">Every Purpose Built property is engineered around three interconnected priorities — each reinforcing the other two.</p>
+    </div>
+    <div class="grid-3" style="margin-top:var(--space-12)">
+      <div class="card">
+        <div class="card-number">01</div>
         <h4>Guest Experience</h4>
-        <p class="body-sm text-muted">Memorable stays that earn 5-star reviews and repeat bookings through intentional design — from arrival flow to bedroom configuration to the view from the living room.</p>
+        <p class="body-sm text-slate">Memorable stays that earn 5-star reviews and repeat bookings through intentional design — from arrival flow to bedroom configuration to the view from the living room. Every guest touchpoint is designed, not discovered.</p>
       </div>
-      <div class="feature-card">
-        <div class="feature-icon gold-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-        </div>
+      <div class="card">
+        <div class="card-number">02</div>
         <h4>Operational Efficiency</h4>
-        <p class="body-sm text-muted">Layouts and material choices that reduce turnover time, maintenance costs, and operational friction — because every turnover affects the bottom line.</p>
+        <p class="body-sm text-slate">Layouts and material choices that reduce turnover time, maintenance costs, and operational friction. The cleaning crew moves efficiently, the HVAC is accessible, and the finishes withstand 52 weeks of guests.</p>
       </div>
-      <div class="feature-card">
-        <div class="feature-icon gold-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-        </div>
+      <div class="card">
+        <div class="card-number">03</div>
         <h4>Investor ROI</h4>
-        <p class="body-sm text-muted">Design decisions driven by booking data, demand patterns, and return on investment — every feature earns its place on the balance sheet.</p>
+        <p class="body-sm text-slate">Design decisions driven by booking data, demand patterns, and return on investment. We don't guess what guests want — we build what the data shows they'll pay for, season after season.</p>
       </div>
     </div>
-    <a href="/three-pillars" class="btn btn-secondary" style="margin-top: var(--space-8)">Explore the three pillars →</a>
+    <a href="/the-approach/#pillars" class="btn btn-primary" style="margin-top:var(--space-12)">Explore the three pillars framework</a>
+  </div>
+</section>
+
+<!-- Stat Band -->
+<section class="section-sm bg-white">
+  <div class="container reveal">
+    <div class="gold-rule" style="margin:0 auto var(--space-8)"></div>
+    <div class="stat-band">
+      <div class="stat-item">
+        <div class="stat-number">25%</div>
+        <div class="stat-label">Flood insurance discount — FEMA CRS Class 5</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">$200M+</div>
+        <div class="stat-label">Active development</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">3.27M</div>
+        <div class="stat-label">Annual visitors</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">584</div>
+        <div class="stat-label">Approved lodging pipeline</div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- Market -->
 <section class="section bg-white">
-  <div class="container reveal" style="max-width: 56rem">
-    <p class="caption text-accent">The Market</p>
-    <h2>A once-in-a-generation rebuild.</h2>
-    <div class="body-lg space-y-4" style="margin-top: var(--space-6)">
-      <p>Fort Myers Beach is in the middle of a transformation. Following Hurricane Ian, the barrier island is rebuilding smarter, stronger, and with higher standards than ever before.</p>
-      <p>$200 million in private development is active right now — from the Margaritaville Beach Resort to the new Fishing Pier to the Sunset Beach Resort breaking ground this summer. The FEMA CRS Class 5 rating delivers a 25% flood insurance discount island-wide. Infrastructure rebuilds are underway with completion dates in sight. Over 40 restaurants are back, the festival calendar is restored, and county parks are being rebuilt.</p>
-      <p>Limited barrier island land. Proven tourism demand. Modern building codes. The conditions for vacation rental investment haven't looked this compelling in decades.</p>
+  <div class="container grid-2 reveal">
+    <div>
+      <picture>
+        <source srcset="/assets/hero/fmb-aerial.webp" type="image/webp">
+        <img src="/assets/hero/fmb-aerial.png" alt="Fort Myers Beach barrier island from above — post-Ian rebuild and active vacation rental investment market" width="1024" height="576" loading="lazy">
+      </picture>
     </div>
-    <div class="grid-4" style="margin-top: var(--space-10)">
-      <div class="stat-card"><span class="stat-number">Class 5</span><span class="stat-label">FEMA Rating — 25% flood insurance discount</span></div>
-      <div class="stat-card"><span class="stat-number">$200M+</span><span class="stat-label">Active private development pipeline</span></div>
-      <div class="stat-card"><span class="stat-number">40+</span><span class="stat-label">Restaurants operating on the island</span></div>
-      <div class="stat-card"><span class="stat-number">584</span><span class="stat-label">Rooms/units in approved lodging pipeline</span></div>
+    <div>
+      <p class="eyebrow" style="margin-bottom:var(--space-4)">The Market</p>
+      <h2 style="margin-bottom:var(--space-6)">A once-in-a-generation rebuild.</h2>
+      <div class="body-base text-slate" style="display:flex;flex-direction:column;gap:var(--space-4)">
+        <p>Fort Myers Beach is in the middle of a transformation. Following Hurricane Ian, the barrier island is rebuilding smarter, stronger, and with higher standards than ever before.</p>
+        <p>$200 million in private development is active right now — from the Margaritaville Beach Resort to the new Fishing Pier to the Sunset Beach Resort breaking ground this summer. Over 40 restaurants are back, the festival calendar is restored, and county parks are being rebuilt.</p>
+        <p>Limited barrier island land. Proven tourism demand. Modern building codes. The conditions for vacation rental investment haven't looked this compelling in decades.</p>
+      </div>
+      <a href="/why-fort-myers-beach/" class="btn btn-primary" style="margin-top:var(--space-8)">Why Fort Myers Beach</a>
     </div>
-    <a href="/why-fort-myers-beach" class="btn btn-secondary" style="margin-top: var(--space-8)">Why Fort Myers Beach →</a>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="section bg-navy text-center">
-  <div class="container reveal" style="max-width: 42rem">
-    <h2 class="text-light">Ready to learn more?</h2>
-    <p class="body-lg" style="color: var(--slate); margin-top: var(--space-4)">Connect with our team to explore vacation rental investment opportunities in Fort Myers Beach, Florida.</p>
-    <div class="cta-group" style="margin-top: var(--space-8)">
-      <a href="/investor-overview" class="btn btn-light btn-lg">Investor Overview</a>
-      <a href="/contact" class="btn btn-primary btn-lg">Request Information</a>
+<!-- Inter-page next nav -->
+<section class="section-sm bg-cream">
+  <div class="container reveal" style="display:flex;justify-content:space-between;align-items:center;gap:var(--space-6);flex-wrap:wrap">
+    <div>
+      <p class="eyebrow" style="margin-bottom:var(--space-2)">Continue</p>
+      <span class="h3" style="color:var(--navy)">Meet the team behind Purpose Built</span>
+    </div>
+    <a href="/about/" class="btn btn-primary">Next: About</a>
+  </div>
+</section>
+
+<!-- Pre-footer CTA -->
+<section class="pre-footer">
+  <div class="container pre-footer-content reveal" style="max-width:42rem">
+    <div class="pre-footer-rule"></div>
+    <h2 class="text-light" style="margin-bottom:var(--space-4)">Ready to learn more?</h2>
+    <p class="body-lg" style="color:rgba(255,255,255,0.75);margin-bottom:var(--space-8)">Connect with our team to explore vacation rental investment opportunities in Fort Myers Beach, Florida. We'll walk you through the Purpose Built approach, the market opportunity, and what a turnkey investment property looks like.</p>
+    <div class="hero-ctas">
+      <a href="/investor-overview/" class="btn btn-gold btn-lg">Investor Overview</a>
+      <a href="/contact/" class="btn btn-outline btn-lg">Request Information</a>
     </div>
   </div>
 </section>
 
 <!-- Footer -->
 <footer class="footer">
-  <div class="container footer-grid">
-    <div class="footer-brand">
-      <span class="footer-logo">Purpose Built <span class="text-accent">by Coastal</span></span>
-      <p class="body-sm text-muted">Purpose-built vacation rental investment in Fort Myers Beach, Florida.</p>
-      <a href="mailto:invest@purposebuiltbycoastal.com" class="body-sm text-accent">invest@purposebuiltbycoastal.com</a>
+  <div class="container">
+    <div class="footer-rule"></div>
+    <div class="footer-grid">
+      <div>
+        <span class="footer-wordmark" style="font-variant:small-caps">Purpose Built</span>
+        <p class="body-sm text-slate" style="margin-bottom:var(--space-4)">Purpose-built vacation rental investment in Fort Myers Beach, Florida.</p>
+        <a href="mailto:invest@purposebuiltbycoastal.com" class="text-gold body-sm">invest@purposebuiltbycoastal.com</a>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <a href="/about/">About</a>
+        <a href="/the-approach/">The Approach</a>
+        <a href="/the-approach/#pillars">Three Pillars</a>
+      </div>
+      <div class="footer-col">
+        <h5>Invest</h5>
+        <a href="/why-fort-myers-beach/">Why Fort Myers Beach</a>
+        <a href="/investor-overview/">Investor Overview</a>
+        <a href="/contact/">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="mailto:invest@purposebuiltbycoastal.com">invest@purposebuiltbycoastal.com</a>
+        <span class="body-sm text-slate">Fort Myers Beach, FL</span>
+      </div>
     </div>
-    <div class="footer-col">
-      <h5 class="text-light">Explore</h5>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/what-is-purpose-built">What Is Purpose Built</a>
-      <a href="/three-pillars">Three Pillars</a>
+    <div class="footer-bottom">
+      <p class="body-sm text-slate">© 2026 Purpose Built by Coastal · Fort Myers Beach, Florida</p>
     </div>
-    <div class="footer-col">
-      <h5 class="text-light">Invest</h5>
-      <a href="/why-fort-myers-beach">Why Fort Myers Beach</a>
-      <a href="/investor-overview">Investor Overview</a>
-      <a href="/contact">Contact</a>
-    </div>
-    <div class="footer-col">
-      <h5 class="text-light">Contact</h5>
-      <p class="body-sm text-muted">Fort Myers Beach, Florida</p>
-      <a href="mailto:invest@purposebuiltbycoastal.com" class="body-sm">invest@purposebuiltbycoastal.com</a>
-    </div>
-  </div>
-  <div class="container footer-bottom">
-    <p class="body-sm text-muted">© 2026 Purpose Built by Coastal · Fort Myers Beach, Florida</p>
   </div>
 </footer>
 
 <script>
-// Mobile nav toggle
-document.getElementById('navToggle').addEventListener('click', function() {
-  this.classList.toggle('active');
-  document.getElementById('navLinks').classList.toggle('active');
-});
-
-// Scroll reveal
-const reveals = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add('visible');
+(function(){
+  var toggle=document.getElementById('navToggle'),links=document.getElementById('navLinks'),nav=document.getElementById('nav');
+  toggle.addEventListener('click',function(){
+    var open=this.classList.toggle('active');
+    links.classList.toggle('active');
+    this.setAttribute('aria-expanded',open);
   });
-}, { threshold: 0.15 });
-reveals.forEach(el => observer.observe(el));
-
-// Nav scroll effect
-window.addEventListener('scroll', () => {
-  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 50);
-});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});},{threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  addEventListener('scroll',function(){nav.classList.toggle('scrolled',scrollY>50);},{passive:true});
+})();
 </script>
 </body>
 </html>
