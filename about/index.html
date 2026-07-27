@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Purpose Built by Coastal | Vacation Rental Developers</title>
+  <meta name="description" content="Meet the team behind Purpose Built by Coastal — Fort Myers Beach vacation rental development built on decades of coastal construction and STR expertise.">
+  <link rel="canonical" href="https://purposebuiltbycoastal.com/about/">
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/tokens.css"><link rel="stylesheet" href="/components.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Purpose Built by Coastal","url":"https://purposebuiltbycoastal.com","email":"invest@purposebuiltbycoastal.com","address":{"@type":"PostalAddress","addressLocality":"Fort Myers Beach","addressRegion":"FL"}}</script>
+</head>
+<body>
+
+<nav class="nav" id="nav"><div class="container nav-inner">
+  <a href="/" class="nav-logo"><img src="/assets/icons/favicon.svg" alt="" width="32" height="32"><span>Purpose Built <span class="text-accent">by Coastal</span></span></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  <div class="nav-links" id="navLinks">
+    <a href="/about">About</a><a href="/what-is-purpose-built">What Is Purpose Built</a><a href="/three-pillars">Three Pillars</a><a href="/why-fort-myers-beach">Why Fort Myers Beach</a><a href="/investor-overview">Investor Overview</a><a href="/contact" class="btn btn-primary">Contact</a>
+  </div>
+</div></nav>
+
+<section class="page-header"><div class="container">
+  <h1>Built on experience.<br>Driven by performance.</h1>
+  <p class="body-lg">Purpose Built by Coastal brings together vacation rental expertise, development discipline, and deep local knowledge of Fort Myers Beach.</p>
+</div></section>
+
+<section class="section bg-white"><div class="container content-section reveal">
+  <h2>Developers who think like operators.</h2>
+  <p>Most developers build homes. We build income-producing assets.</p>
+  <p>Purpose Built by Coastal was founded on a straightforward observation: the vacation rental industry is full of properties that were designed for living, then retrofitted for rental. The result is a constant tension between guest expectations, operational reality, and investor returns.</p>
+  <p>We saw a better way. By starting with the rental outcome and designing backward, we create properties where the guest experience feels effortless, the operations run efficiently, and the numbers work from day one.</p>
+  <p>We're not the biggest developer on Fort Myers Beach. We're the one that thinks hardest about what happens after the keys change hands.</p>
+  <a href="/what-is-purpose-built" class="btn btn-secondary" style="margin-top:var(--space-6)">See our design approach →</a>
+</div></section>
+
+<section class="section bg-sand"><div class="container content-section reveal">
+  <p class="caption text-accent">Why Coastal</p>
+  <h2>Local knowledge. Proven methodology.</h2>
+  <p>Fort Myers Beach isn't just a market we entered — it's a community we know. The post-Ian rebuild isn't a headline to us; it's our daily reality. We understand the building codes, the insurance landscape, the rental demand patterns, and the infrastructure timeline because we live it.</p>
+  <p>That local knowledge is paired with a repeatable development methodology. Every Purpose Built property follows the same rigorous design framework — three pillars, data-driven decisions, construction standards built for rental durability. The result is consistency across properties and predictability for investors.</p>
+  <a href="/three-pillars" class="btn btn-secondary" style="margin-top:var(--space-6)">Explore the three pillars →</a>
+</div></section>
+
+<section class="section bg-navy text-center"><div class="container reveal" style="max-width:42rem">
+  <h2 class="text-light">Let's build something that performs.</h2>
+  <p class="body-lg" style="color:var(--slate);margin-top:var(--space-4)">Whether you're an experienced vacation rental investor or exploring the asset class for the first time, we'd welcome the conversation.</p>
+  <div class="cta-group" style="margin-top:var(--space-8)">
+    <a href="/investor-overview" class="btn btn-light btn-lg">View Investment Details</a>
+    <a href="/contact" class="btn btn-primary btn-lg">Get in Touch</a>
+  </div>
+</div></section>
+
+<footer class="footer"><div class="container footer-grid">
+  <div class="footer-brand"><span class="footer-logo">Purpose Built <span class="text-accent">by Coastal</span></span><p class="body-sm text-muted">Purpose-built vacation rental investment in Fort Myers Beach, Florida.</p><a href="mailto:invest@purposebuiltbycoastal.com" class="body-sm text-accent">invest@purposebuiltbycoastal.com</a></div>
+  <div class="footer-col"><h5 class="text-light">Explore</h5><a href="/">Home</a><a href="/about">About</a><a href="/what-is-purpose-built">What Is Purpose Built</a><a href="/three-pillars">Three Pillars</a></div>
+  <div class="footer-col"><h5 class="text-light">Invest</h5><a href="/why-fort-myers-beach">Why Fort Myers Beach</a><a href="/investor-overview">Investor Overview</a><a href="/contact">Contact</a></div>
+  <div class="footer-col"><h5 class="text-light">Contact</h5><p class="body-sm text-muted">Fort Myers Beach, Florida</p><a href="mailto:invest@purposebuiltbycoastal.com" class="body-sm">invest@purposebuiltbycoastal.com</a></div>
+</div><div class="container footer-bottom"><p class="body-sm text-muted">© 2026 Purpose Built by Coastal · Fort Myers Beach, Florida</p></div></footer>
+
+<script>
+document.getElementById('navToggle').addEventListener('click',function(){this.classList.toggle('active');document.getElementById('navLinks').classList.toggle('active')});
+document.querySelectorAll('.reveal').forEach(el=>new IntersectionObserver((e)=>{e.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:0.15}).observe(el));
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>50)});
+</script>
+</body>
+</html>
