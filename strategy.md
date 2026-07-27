@@ -2,7 +2,16 @@
 
 **Prepared by:** Agent 1 (Strategy & Discovery)
 **Date:** July 27, 2026
-**Status:** Draft v1.0
+**Status:** v2.0 — Design Refresh in progress (July 27, 2026)
+
+### Design Refresh Decisions (from Hermes Design Brief)
+- **Typography:** Fraunces serif for H1-H2 (opsz 72, weight 500-600), Inter body at 17-18px/1.7, ~68ch measure
+- **Color:** Navy → #0E2238. Gold → #C4A265 (sparingly). Fix contrast on nav button, hero ghost button
+- **Navigation:** Simplify to 5 items — About · The Approach (was "What Is Purpose Built" + "Three Pillars" folded in) · Why Fort Myers Beach · Investor Overview · Contact(btn)
+- **Layout:** 12-col grid, max 1200px. Kill narrow left-stacked columns. Two-col sections, centered card grids.
+- **Imagery:** Replace AI heroes with navy gradient + gold rule interim treatment. Add island map. Real photos for dev cards.
+- **Motion:** Trigger at 10-15%, 300-450ms, 12-16px translate-up. prefers-reduced-motion. Micro-interactions.
+- **Design north star:** Understated luxury-development — editorial serif, generous whitespace, restrained gold, deep navy.
 
 ---
 
