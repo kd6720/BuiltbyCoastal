@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <rect width="180" height="180" rx="32" fill="#0E2238"/>
+  <text x="90" y="82" text-anchor="middle" fill="#FFFFFF" font-family="Georgia,serif" font-weight="700" font-size="64" letter-spacing="-2">P</text>
+  <line x1="45" y1="140" x2="135" y2="140" stroke="#C4A265" stroke-width="3"/>
+  <text x="90" y="165" text-anchor="middle" fill="#C4A265" font-family="Georgia,serif" font-weight="600" font-size="16" font-style="italic" letter-spacing="2">by Coastal</text>
+</svg>
